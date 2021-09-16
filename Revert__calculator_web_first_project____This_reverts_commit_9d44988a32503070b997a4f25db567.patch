@@ -1,0 +1,256 @@
+Index: calculator.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/calculator.iml b/calculator.iml
+new file mode 100644
+--- /dev/null	(date 1631796441152)
++++ b/calculator.iml	(date 1631796441152)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="WEB_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1631796441160)
++++ b/.idea/modules.xml	(date 1631796441160)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/calculator.iml" filepath="$PROJECT_DIR$/calculator.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1631796441168)
++++ b/.idea/vcs.xml	(date 1631796441168)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: calc/style.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/calc/style.css b/calc/style.css
+new file mode 100644
+--- /dev/null	(date 1631797394412)
++++ b/calc/style.css	(date 1631797394412)
+@@ -0,0 +1,73 @@
++* {
++    box-sizing: border-box;
++}
++
++body {
++    padding: 0;
++    margin: 0;
++}
++
++.calc {
++    width: 400px;
++    background-color: black;
++    color: white;
++}
++
++.screen {
++    color: white;
++    font-size: 40px;
++    font-family: "Courier New", Courier, monospace;
++    text-align: right;
++    padding: 20px 5px;
++}
++
++.calc-button {
++    background-color: #d8d9db;
++    color: black;
++    height: 100px;
++    width: 24.5%;
++    border: none;
++    border-radius: 0;
++    font-size: 40px;
++    cursor: pointer;
++}
++
++.calc-button:hover {
++    background-color: #ebebeb;
++}
++
++.calc-button:active {
++    background-color: #bbbcbe;
++}
++
++.double {
++    width: 49.7%;
++}
++
++.triple {
++    width: 74.8%;
++}
++
++.calc-button:last-child {
++    background-color: #df974c;
++    color: white;
++}
++
++.calc-button:last-child:hover {
++    background-color: #dfb07e;
++}
++
++.calc-button:last-child:active {
++    background-color: #dd8d37;
++}
++
++.calc-button-row {
++    display: flex;
++    align-content: stretch;
++    justify-content: space-between;
++    margin-bottom: 0.5%;
++}
++
++.calc-button-row:last-child {
++    padding-bottom: 0;
++}
+Index: calc/jsx.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/calc/jsx.js b/calc/jsx.js
+new file mode 100644
+--- /dev/null	(date 1631797321072)
++++ b/calc/jsx.js	(date 1631797321072)
+@@ -0,0 +1,91 @@
++let runningTotal = 0;
++let buffer = "0";
++let previousOperator;
++const screen = document.querySelector(".screen");
++
++
++function buttonClick(value) {
++    if(isNaN(parseInt(value))){
++        handleSymbol(value);
++    } else {
++        handleNumber(value);
++    }
++    rerender();
++}
++
++function handleNumber(value) {
++    if (buffer === "0") {
++        buffer = value;
++    } else {
++        buffer += value;
++    }
++}
++function handleMath(value) {
++    if (buffer === "0") {
++        return;
++    }
++
++    const intBuffer = parseInt(buffer,);
++    if (runningTotal === 0) {
++        runningTotal = intBuffer;
++    } else {
++        flushOperation(intBuffer);
++    }
++    previousOperator = value;
++
++    buffer = "0";
++}
++function flushOperation(intBuffer) {
++    if (previousOperator === "+") {
++        runningTotal += intBuffer;
++    }else if (previousOperator === "-") {
++        runningTotal -= intBuffer;
++    }else if (previousOperator === "x") {
++        runningTotal *= intBuffer;
++    } else {
++        runningTotal /= intBuffer;
++    }
++}
++
++function handleSymbol(value) {
++    switch (value) {
++        case 'C':
++            buffer = "0";
++            runningTotal = 0;
++            break;
++        case "=":
++            if(previousOperator === null) {
++                //need two numbers to do math
++                return;
++            }
++            flushOperation(parseInt(buffer));
++            previousOperator = null;
++            buffer = + runningTotal;
++            runningTotal = 0;
++            break;
++        case"â†":
++            if (buffer.length === 1) {
++                buffer = "0";
++            } else {
++                buffer = buffer.substring(0, buffer.length - 1);
++            }
++            break;
++        case "+":
++        case "-":
++        case "x":
++        case "Ã·":
++            handleMath(value);
++            break;
++    }
++}
++function rerender() {
++    screen.innerText = buffer;
++}
++function init() {
++    document.querySelector('.calc-buttons')
++        .addEventListener("click", function (event) {
++            buttonClick(event.target.innerText);
++        });
++}
++init();
++
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1631795958380)
++++ b/.idea/misc.xml	(date 1631795958380)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
++</project>
+\ No newline at end of file
