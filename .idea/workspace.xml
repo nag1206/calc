@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de035151-eb2b-4d29-b4d1-be37ca9d7450" name="Changes" comment="Revert &quot;calculator web first project.&quot;&#10;&#10;This reverts commit 9d44988a32503070b997a4f25db56768b8ee6567.">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calc/jsx.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calc/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calculator.iml" afterDir="false" />
-    </list>
+    <list default="true" id="de035151-eb2b-4d29-b4d1-be37ca9d7450" name="Changes" comment="Revert &quot;calculator web first project.&quot;&#10;&#10;This reverts commit 9d44988a32503070b997a4f25db56768b8ee6567." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,7 +78,7 @@
       <updated>1631712302168</updated>
       <workItem from="1631712303505" duration="1662000" />
       <workItem from="1631714004833" duration="6022000" />
-      <workItem from="1631776172564" duration="15090000" />
+      <workItem from="1631776172564" duration="15423000" />
     </task>
     <task id="LOCAL-00001" summary="calculator web first project.">
       <created>1631794647799</created>
@@ -129,7 +122,49 @@
       <option name="project" value="LOCAL" />
       <updated>1631797580465</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Revert &quot;calculator web first project.&quot;&#10;&#10;This reverts commit 9d44988a32503070b997a4f25db56768b8ee6567.">
+      <created>1631797656681</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1631797656681</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Revert &quot;calculator web first project.&quot;&#10;&#10;This reverts commit 9d44988a32503070b997a4f25db56768b8ee6567.">
+      <created>1631797758376</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1631797758376</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Revert &quot;calculator web first project.&quot;&#10;&#10;This reverts commit 9d44988a32503070b997a4f25db56768b8ee6567.">
+      <created>1631797892372</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1631797892372</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Revert &quot;calculator web first project.&quot;&#10;&#10;This reverts commit 9d44988a32503070b997a4f25db56768b8ee6567.">
+      <created>1631797901828</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1631797901828</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Revert &quot;calculator web first project.&quot;&#10;&#10;This reverts commit 9d44988a32503070b997a4f25db56768b8ee6567.">
+      <created>1631797911085</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1631797911085</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Revert &quot;calculator web first project.&quot;&#10;&#10;This reverts commit 9d44988a32503070b997a4f25db56768b8ee6567.">
+      <created>1631797919054</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1631797919054</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
