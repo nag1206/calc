@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de035151-eb2b-4d29-b4d1-be37ca9d7450" name="Changes" comment="Revert &quot;calculator web first project.&quot;&#10;&#10;This reverts commit 9d44988a32503070b997a4f25db56768b8ee6567.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/calc/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +83,7 @@
       <workItem from="1631714004833" duration="6022000" />
       <workItem from="1631776172564" duration="15632000" />
       <workItem from="1631798207847" duration="69000" />
+      <workItem from="1631862976564" duration="315000" />
     </task>
     <task id="LOCAL-00001" summary="calculator web first project.">
       <created>1631794647799</created>
