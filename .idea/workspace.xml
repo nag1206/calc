@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de035151-eb2b-4d29-b4d1-be37ca9d7450" name="Changes" comment="Revert &quot;calculator web first project.&quot;&#10;&#10;This reverts commit 9d44988a32503070b997a4f25db56768b8ee6567." />
+    <list default="true" id="de035151-eb2b-4d29-b4d1-be37ca9d7450" name="Changes" comment="Revert &quot;calculator web first project.&quot;&#10;&#10;This reverts commit 9d44988a32503070b997a4f25db56768b8ee6567.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,6 +47,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ChangesTree.GroupingKeys" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -78,7 +81,8 @@
       <updated>1631712302168</updated>
       <workItem from="1631712303505" duration="1662000" />
       <workItem from="1631714004833" duration="6022000" />
-      <workItem from="1631776172564" duration="15423000" />
+      <workItem from="1631776172564" duration="15632000" />
+      <workItem from="1631798207847" duration="69000" />
     </task>
     <task id="LOCAL-00001" summary="calculator web first project.">
       <created>1631794647799</created>
@@ -164,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631797919054</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Revert &quot;calculator web first project.&quot;&#10;&#10;This reverts commit 9d44988a32503070b997a4f25db56768b8ee6567.">
+      <created>1631798030924</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1631798030924</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,7 +192,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="calculator" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -192,6 +203,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="calculator web first project." />
